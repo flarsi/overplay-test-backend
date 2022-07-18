@@ -1,9 +1,7 @@
 const User = require("../models/user");
-const passport = require("passport");
 const jwt = require('jsonwebtoken');
 const { validationResult } = require("express-validator");
 const bcrypt = require('bcrypt');
-const saltRounds = 10;
 
 async function signUp(req, res) {
   try {
